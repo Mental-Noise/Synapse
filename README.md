@@ -4,7 +4,7 @@
 
 This repository contains the code and schematics (EasyEDA format) for a DIY module converting CV signals to MIDI commands the Volca Beats understands.
 
-I have make this module to work with my modular synth but it can work with any control voltage source.
+I have made this module to work with my modular synth but it can work with any control voltage source.
 
 ## Controls
 The CV to MIDI converter gives the following controls over the Volca Beats :
