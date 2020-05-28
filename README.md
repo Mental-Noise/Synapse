@@ -8,30 +8,18 @@ I have made this module to work with my modular synth but it can work with any c
 
 This module does not require the Volca Beats to be modded in any way, this module is just using the MIDI in connection of the Volca Beats to transmit informations received from the CV inputs, it is complitely safe to use.
 
+The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h), which can be found in the Arduino Library Manager.
+
+The different controls can easily be changed to some other of your choice. All parameters are described in comments in the code.
+
+The code is written to allow easy customization even for someone who doesn't know anything about writing code for the Arduino but has some ideas on how/what to control the Volca Beats.
+
 ## Controls
 The CV to MIDI converter gives the following controls over the Volca Beats :
 * Trigger of each instrument
 * Change of the PCM speed of each PCM instrument independently
 * Change of the Stutter Time and Depth
 * Clock trigger
-
-## Parts
-* 1x Arduino Nano
-* 1x 5 pin MIDI connector 
-* 24x 1N4001 or equivalent rectifier diodes
-* 11x BC547B or equivalent transistors
-* 33x 10k resistors
-* 11x 1N914 or equivalent diodes
-* 17x LED of your preference
-* 17x Mono jack sockets
-
-## General informations
-
-The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h), which can be found in the Arduino Library Manager.
-
-The different controls can easily be changed to some other of your choice. All parameters are described in comments in the code.
-
-The code is written to allow easy customization even for someone who doesn't know anything about writing code for the Arduino but has some ideas on how/what to control the Volca Beats.
 
 ## CV range
 The CV inputs range is 0 to +5V.
@@ -47,6 +35,16 @@ If the Eurorack standard for CV signals was well described and implemented, I co
 
 Some modules have a range of 0 to +5V, some others 0 to +10V, -5 to +5V, -2.5V to +2.5V, -10V to 0 etc. which makes it impossible to handle correctly.
 So I decided to simply use the Arduino input voltage range and it works pretty well with my setup that way.
+
+## Parts
+* 1x Arduino Nano
+* 1x 5 pin MIDI connector 
+* 24x 1N4001 or equivalent rectifier diodes
+* 11x BC547B or equivalent transistors
+* 33x 10k resistors
+* 11x 1N914 or equivalent diodes
+* 17x LED of your preference
+* 17x Mono jack sockets
 
 ## Schematics
 ![Arduino - Eurorack conenctor - MIDI connector](schematics/Arduino.png "Arduino - Eurorack conenctor - MIDI connector")
