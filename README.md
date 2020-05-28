@@ -1,4 +1,6 @@
-# volca-beats-cv2midi
+# WORK IN PROGRESS
+
+# Korg Volca Beats CV2MIDI
 
 The repository contains the code and schematics for a DIY module converting CV signals to MIDI commands the Volca Beats understands.
 
