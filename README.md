@@ -2,7 +2,7 @@
 
 # Korg Volca Beats CV2MIDI
 
-The repository contains the code and schematics for a DIY module converting CV signals to MIDI commands the Volca Beats understands.
+This repository contains the code and schematics (EasyEDA format) for a DIY module converting CV signals to MIDI commands the Volca Beats understands.
 
 I have make this module to work with my modular synth but it can work with any control voltage source.
 
@@ -44,4 +44,12 @@ The same goes for negative signals, the full bridge rectifiers will convert them
 If the Eurorack standard for CV signals was well described and implemented, I could have map the entire CV range to a 0 to +5V range but from what I understand, this is not case.
 
 Some modules have a range of 0 to +5V, some others 0 to +10V, -5 to +5V, -2.5V to +2.5V, -10V to 0 etc. which makes it impossible to handle correctly.
-So I decided to simply use the Arduino input voltage range and it works pretty well with my setup that way. 
+So I decided to simply use the Arduino input voltage range and it works pretty well with my setup that way.
+
+## Schematics
+![Arduino - Eurorack conenctor - MIDI connector](schematics/Arduino.png "Arduino - Eurorack conenctor - MIDI connector")
+
+![Digital Inputs](schematics/Digital%20Inputs.png "Digital Inputs")
+
+![Analog Inputs](schematics/Analog%20Inputs.png "Analog Inputs")
+ 
