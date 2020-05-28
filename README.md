@@ -6,6 +6,9 @@ This repository contains the code and schematics (EasyEDA format) for a DIY modu
 
 I have made this module to work with my modular synth but it can work with any control voltage source.
 
+My modular synth already has a +5V bus so I don't need a voltage regulator to convert +12V to +5V in this circuit.
+If you don't have a +5V you will have to add the voltage regulator by yourself.
+
 This module does not require the Volca Beats to be modded in any way, this module is just using the MIDI in connection of the Volca Beats to transmit informations received from the CV inputs, it is complitely safe to use.
 
 The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h), which can be found in the Arduino Library Manager.
@@ -39,11 +42,13 @@ So I decided to simply use the Arduino input voltage range and it works pretty w
 ## Parts
 * 1x Arduino Nano
 * 1x 5 pin MIDI connector 
+* 1x Eurorack 16 pins connector
 * 24x 1N4001 or equivalent rectifier diodes
 * 11x BC547B or equivalent transistors
-* 33x 10k resistors
+* 22x 10k resistors
+* 11x 1k resistors (or higher value if you want to reduce the LEDs brightness)
 * 11x 1N914 or equivalent diodes
-* 17x LED of your preference
+* 17x LEDs of the color of your choice
 * 17x Mono jack sockets
 
 ## Schematics
