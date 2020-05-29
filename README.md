@@ -32,11 +32,11 @@ Everything over this range is suppressed so you don't have to worry about frying
 
 That also means that if you are using a module outputting CV signals up to 10V, you will reach the maximum value of the CV input at +5V, cutting your module resolution by 2.
 
-The same goes for negative signals, the full bridge rectifiers will convert them to positive signals but they will have the same clipping at +5V to protect the Arduino. This mens that negative signals will be interpreted the same as positive signals for the analog inputs, for the digital inputs they are simply ignored.
+The same goes for negative signals, the full bridge rectifiers will convert them to positive signals but they will have the same clipping at +5V to protect the Arduino. This means that negative signals will be interpreted the same as positive signals for the analog inputs, for the digital inputs they are simply ignored.
 
 If the Eurorack standard for CV signals was well described and implemented, I could have map the entire CV range to a 0 to +5V range but from what I understand, this is not case.
 
-Some modules have a range of 0 to +5V, some others 0 to +10V, -5 to +5V, -2.5V to +2.5V, -10V to 0 etc. which makes it impossible to handle correctly.
+Some modules have a range of 0 to +5V, some others 0 to +10V, -5 to +5V, -2.5V to +2.5V, -10V to 0 etc. which makes it impossible for me to handle correctly.
 So I decided to simply use the Arduino input voltage range and it works pretty well with my setup that way.
 
 ## Parts
@@ -57,4 +57,3 @@ So I decided to simply use the Arduino input voltage range and it works pretty w
 ![Digital Inputs](schematics/Digital%20Inputs.png "Digital Inputs")
 
 ![Analog Inputs](schematics/Analog%20Inputs.png "Analog Inputs")
- 
