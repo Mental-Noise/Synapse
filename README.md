@@ -1,4 +1,6 @@
-# WORK IN PROGRESS (documentation and code are currently out of date, I'm going to update everything once the tests of the latest revisions are done, waiting for the PCBs)
+# WORK IN PROGRESS
+
+(documentation and code are currently out of date, I'm going to update everything once the tests of the latest revisions are done, waiting for the PCBs)
 
 # Mental Noise - Synapse - CV2MIDI Eurorack module
 
