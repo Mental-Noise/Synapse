@@ -1,28 +1,29 @@
-# WORK IN PROGRESS
+# WORK IN PROGRESS (documentation and code are currently out of date, I'm going to update everything once the tests of the latest revisions are done, waiting for the PCBs)
 
-# Korg Volca Beats CV2MIDI
+# Mental Noise - Synapse - CV2MIDI Eurorack module
 
-This repository contains the code and schematics (EasyEDA format) for a DIY module converting CV signals to MIDI commands the Volca Beats understands.
+This repository contains the code and schematics (EasyEDA format) for the Eurorack module Synapse by Mental Noise converting CV signals to MIDI commands any MIDI instrument can understand.
+
+I originally made this module to control my Korg Volca Beats but after some discussions on Reddit, I decided to make it more generic so it's able to control basically any MIDI instrument using different profiles for each instrument.
 
 I have made this module to work with my modular synth but it can work with any control voltage source.
 
 My modular synth already has a +5V bus so I don't need a voltage regulator to convert +12V to +5V in this circuit.
 If you don't have a +5V you will have to add the voltage regulator by yourself.
 
-This module does not require the Volca Beats to be modded in any way, this module is just using the MIDI in connection of the Volca Beats to transmit informations received from the CV inputs, it is complitely safe to use.
+This module does not require the instrument to be modded in any way, it is just using the MIDI IN connection to transmit informations received from the CV inputs, it is complitely safe to use.
 
 The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h), which can be found in the Arduino Library Manager.
 
-The different controls can easily be changed to some other of your choice. All parameters are described in comments in the code.
+Custom profiles can easily be created to control your specific instrument.
 
 The code is written to allow easy customization even for someone who doesn't know anything about writing code for the Arduino but has some ideas on how/what to control the Volca Beats.
 
 ## Controls
-The CV to MIDI converter gives the following controls over the Volca Beats :
+The generic Volca Beats profiles allow the following controls :
 * Trigger of each instrument
 * Change of the PCM speed of each PCM instrument independently
 * Change of the Stutter Time and Depth
-* Clock trigger
 
 ## CV range
 The CV inputs range is 0 to +5V.
