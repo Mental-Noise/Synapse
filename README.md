@@ -22,7 +22,7 @@ As I would love for anyone who wants to use this module to be able to, I'm selli
 
 The goal is not to make lot of benefits on this module, I'm already making it available for free here but if you don't have the skills to do it yourself with all the sources available here then it's a good way for you to get one!
 
-If you don't want to buy the module but still want to support me, you can always send me tip on [paypal](https://paypal.me/atudoll), this is highly appreciated! :)
+If you don't want to buy the module but still want to support me, you can always send me a tip on [paypal](https://paypal.me/atudoll), this is highly appreciated! :)
 
 ## Specifications
 
