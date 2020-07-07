@@ -84,4 +84,4 @@ A pulse of 20ms is triggered by any gate or trigger signal over 3V (up to +10V).
 
 ![Digital Inputs](schematics/Digital_Inputs.png "Digital Inputs")
 
-Thank you and enjoy this module !
+Enjoy!
