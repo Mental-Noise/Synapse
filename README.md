@@ -22,6 +22,8 @@ As I would love for anyone who wants to use this module to be able to, I'm selli
 
 The goal is not to make lot of benefits on this module, I'm already making it available for free here but if you don't have the skills to do it yourself with all the sources available here then it's a good way for you to get one!
 
+If you don't want to buy the module but still want to support me, you can always send me tip on [paypal](https://paypal.me/atudoll), this is highly appreciated! :)
+
 ## Specifications
 
 Checkout the [Documentation / Build guide](http://mentalnoise.atulrnt.com/Mental%20Noise%20-%20Synapse.pdf) for full specifications.
@@ -81,9 +83,5 @@ A pulse of 20ms is triggered by any gate or trigger signal over 3V (up to +10V).
 ![Analog Inputs](schematics/Analog_Inputs.png "Analog Inputs")
 
 ![Digital Inputs](schematics/Digital_Inputs.png "Digital Inputs")
-
-## You like this project?
-
-I've put lot of time and efforts into this project so if you find all of this useful, consider supporting me by sending me a tip on [paypal](https://paypal.me/atudoll), this is highly appreciated! :)
 
 Thank you and enjoy this module !
