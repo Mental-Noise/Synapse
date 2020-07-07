@@ -21,6 +21,9 @@ As I would love for anyone who wants to use this module to be able to, I'm selli
 The goal is not to make lot of benefits on this module, I'm already making it available for free here but if you don't have the skills to do it yourself with all the sources available here then it's a good way for you to get one!
 
 ## Specifications
+
+Checkout the [Documentation / Build guide](http://mentalnoise.atulrnt.com/Mental%20Noise%20-%20Synapse.pdf) for full specifications.
+
 This module is designed to be used in an Eurorack system, it requires a +12V and a ground connection to the power supply.
 
 The dimensions are:
