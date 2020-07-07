@@ -14,7 +14,11 @@ Custom profiles can easily be created to control your specific instrument.
 
 The code is written to allow easy customization even for someone who doesn't know anything about writing code for the Arduino but has some ideas on how/what to control the Volca Beats.
 
-As I would love for anyone who wants to use this module to be able to, I'm selling some kits and fully assembled modules (in limited quantites) on [Tindie](https://www.tindie.com/stores/mentalnoise/).
+## Module available on Tindie
+
+As I would love for anyone who wants to use this module to be able to, I'm selling some kits and fully assembled modules (in limited quantities) on [Tindie](https://www.tindie.com/stores/mentalnoise/).
+
+The goal is not to make lot of benefits on this module, I'm already making it available for free here but if you don't have the skills to do it yourself with all the sources available here then it's a good way for you to get one!
 
 ## Specifications
 This module is designed to be used in an Eurorack system, it requires a +12V and a ground connection to the power supply.
