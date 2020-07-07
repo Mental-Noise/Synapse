@@ -14,6 +14,8 @@ Custom profiles can easily be created to control your specific instrument.
 
 The code is written to allow easy customization even for someone who doesn't know anything about writing code for the Arduino but has some ideas on how/what to control the Volca Beats.
 
+If this module gets a bit popular, I might consider writing an app to easily modify the firmware without writing a single line of code.
+
 ## Module available on Tindie
 
 As I would love for anyone who wants to use this module to be able to, I'm selling some kits and fully assembled modules (in limited quantities) on [Tindie](https://www.tindie.com/stores/mentalnoise/).
@@ -34,17 +36,17 @@ The dimensions are:
 The MIDI device is controlled by this module using a MIDI cable (5-pin DIN connector).
 
 Two types of inputs are available on the module:
-### CV x6
+
+#### CV x6
 Analog input used to control parameters of the MIDI device. 
 The MIDI command sent by those inputs is a Control Change.
 Can be any voltage between 0 and +5V.
 Higher voltages (up to +10V) will be clipped to +5V.
 
-### Gate x10
+#### Gate x10
 Digital input used to trigger a note on the MIDI device.
 The MIDI command sent by those inputs is a Note ON.
 A pulse of 20ms is triggered by any gate or trigger signal over 3V (up to +10V).
-
 
 ## Parts
 -	1x PCB with pre-soldered SMD components
