@@ -84,4 +84,4 @@ A pulse of 20ms is triggered by any gate or trigger signal over 3V (up to +10V).
 
 I've put lot of time and efforts into this project so if you find all of this useful, consider supporting me by sending me a tip on [paypal](https://paypal.me/atudoll), this is highly appreciated! :)
 
-Thznk you and enjoy this module !
+Thank you and enjoy this module !
