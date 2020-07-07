@@ -8,7 +8,7 @@ I have made this module to work with my modular synth but it can work with any c
 
 This module does not require the instrument to be modded in any way, it is just using the MIDI IN connection to transmit informations received from the CV inputs, it is complitely safe to use.
 
-The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h), which can be found in the Arduino Library Manager.
+The Arduino code uses the standard [MIDI library](https://github.com/FortySevenEffects/arduino_midi_library/blob/master/src/MIDI.h) and the [ResponsiveAnalogRead library by dxinteractive](https://github.com/dxinteractive/ResponsiveAnalogRead), which can both be found in the Arduino Library Manager.
 
 Custom profiles can easily be created to control your specific instrument.
 
@@ -69,6 +69,6 @@ A pulse of 20ms is triggered by any gate or trigger signal over 3V (up to +10V).
 ## Schematics
 ![Arduino - Eurorack conenctor - MIDI connector](schematics/Arduino.png "Arduino - Eurorack conenctor - MIDI connector")
 
-![Digital Inputs](schematics/Digital_Inputs.png "Digital Inputs")
-
 ![Analog Inputs](schematics/Analog_Inputs.png "Analog Inputs")
+
+![Digital Inputs](schematics/Digital_Inputs.png "Digital Inputs")
