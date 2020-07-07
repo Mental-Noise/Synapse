@@ -1,17 +1,10 @@
-# WORK IN PROGRESS
-
-(documentation and code are currently out of date, I'm going to update everything once the tests of the latest revisions are done, waiting for the PCBs)
-
 # Mental Noise - Synapse - CV2MIDI Eurorack module
 
-This repository contains the code and schematics (EasyEDA format) for the Eurorack module Synapse by Mental Noise converting CV signals to MIDI commands any MIDI instrument can understand.
+This repository contains the code and schematics (EasyEDA format) for the Mental Noise - Synapse Eurorack module converting CV signals to MIDI commands any MIDI instrument can understand.
 
 I originally made this module to control my Korg Volca Beats but after some discussions on Reddit, I decided to make it more generic so it's able to control basically any MIDI instrument using different profiles for each instrument.
 
-I have made this module to work with my modular synth but it can work with any control voltage source.
-
-My modular synth already has a +5V bus so I don't need a voltage regulator to convert +12V to +5V in this circuit.
-If you don't have a +5V you will have to add the voltage regulator by yourself.
+I have made this module to work with my modular synth but it can work with any control voltage source between 0 and +5V.
 
 This module does not require the instrument to be modded in any way, it is just using the MIDI IN connection to transmit informations received from the CV inputs, it is complitely safe to use.
 
@@ -21,42 +14,61 @@ Custom profiles can easily be created to control your specific instrument.
 
 The code is written to allow easy customization even for someone who doesn't know anything about writing code for the Arduino but has some ideas on how/what to control the Volca Beats.
 
-## Controls
-The generic Volca Beats profiles allow the following controls :
-* Trigger of each instrument
-* Change of the PCM speed of each PCM instrument independently
-* Change of the Stutter Time and Depth
+As I would love for anyone who wants to use this module to be able to, I'm selling some kits and fully assembled modules (in limited quantites) on [Tindie](https://www.tindie.com/stores/mentalnoise/).
 
-## CV range
-The CV inputs range is 0 to +5V.
+## Specifications
+This module is designed to be used in an Eurorack system, it requires a +12V and a ground connection to the power supply.
 
-Everything under this range is inverted.
-Everything over this range is suppressed so you don't have to worry about frying your Arduino.
+The dimensions are:
+- Width: 6HP
+- Height: 3U
+- Depth: 40mm
 
-That also means that if you are using a module outputting CV signals up to 10V, you will reach the maximum value of the CV input at +5V, cutting your module resolution by 2.
+The MIDI device is controlled by this module using a MIDI cable (5-pin DIN connector).
 
-The same goes for negative signals, the full bridge rectifiers will convert them to positive signals but they will have the same clipping at +5V to protect the Arduino. This means that negative signals will be interpreted the same as positive signals for the analog inputs, for the digital inputs they are simply ignored.
+Two types of inputs are available on the module:
+### CV x6
+Analog input used to control parameters of the MIDI device. 
+The MIDI command sent by those inputs is a Control Change.
+Can be any voltage between 0 and +5V.
+Higher voltages (up to +10V) will be clipped to +5V.
 
-If the Eurorack standard for CV signals was well described and implemented, I could have map the entire CV range to a 0 to +5V range but from what I understand, this is not case.
+### Gate x10
+Digital input used to trigger a note on the MIDI device.
+The MIDI command sent by those inputs is a Note ON.
+A pulse of 20ms is triggered by any gate or trigger signal over 3V (up to +10V).
 
-Some modules have a range of 0 to +5V, some others 0 to +10V, -5 to +5V, -2.5V to +2.5V, -10V to 0 etc. which makes it impossible for me to handle correctly.
-So I decided to simply use the Arduino input voltage range and it works pretty well with my setup that way.
 
 ## Parts
-* 1x Arduino Nano
-* 1x 5 pin MIDI connector 
-* 1x Eurorack 16 pins connector
-* 24x 1N4001 or equivalent rectifier diodes
-* 11x BC547B or equivalent transistors
-* 22x 10k resistors
-* 11x 1k resistors (or higher value if you want to reduce the LEDs brightness)
-* 11x 1N914 or equivalent diodes
-* 17x LEDs of the color of your choice
-* 17x Mono jack sockets
+-	1x PCB with pre-soldered SMD components
+-	1x Unpopulated PCB for the Arduino and the 5V regulator
+-	1x faceplate
+-	1x Arduino Nano
+-	1x USB cable to connect the Arduino Nano to a computer
+-	1x 100 Ohm 1/4W resistor
+-	2x 220 Ohm 1/4W resistor
+-	1x 100nF ceramic capacitor
+-	1x 10µF electrolytic capacitor
+-	1x L7805 5V voltage regulator
+-	16x Mono jack socket
+-	16x Knurled nut
+-	1x MIDI 5-pin DIN connector
+-	3x wires to connect the MIDI connector to the module
+-	6x heat shrink pieces
+-	2x hex screws and nut to screw the MIDI connector on the module
+-	2x 1x15 pin female header
+-	3x 2x2 pin female header
+-	1x 1x3 pin female header
+-	1x 2x3 pin female header
+-	6x 1x2 pin male header
+-	3x 1x3 pin male header
+-	1x 2x5 pin IDC connector (10 pin Eurorack connector)
+-	1x 2x3 pin IDC connector (6 pin extension connector)
+-	1x 10 pin to 16 pin or 10 pin to 10 pin Eurorack cable depending on your needs
 
 ## Schematics
 ![Arduino - Eurorack conenctor - MIDI connector](schematics/Arduino.png "Arduino - Eurorack conenctor - MIDI connector")
 
-![Digital Inputs](schematics/Digital%20Inputs.png "Digital Inputs")
+![Digital Inputs](schematics/Digital_Inputs.png "Digital Inputs")
 
-![Analog Inputs](schematics/Analog%20Inputs.png "Analog Inputs")
+![Analog Inputs](schematics/Analog_Inputs.png "Analog Inputs")
