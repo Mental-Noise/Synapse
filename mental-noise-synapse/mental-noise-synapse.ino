@@ -164,7 +164,7 @@ void handleControls() {
           continue;
         }
         
-        controlValue = ccInputs[i].getValue();
+        controlValue = map(ccInputs[i].getValue(), 0, 1023, 0, 127);
         
         if (controlValue < 5) {
             controlValue = defaultControlValue;
