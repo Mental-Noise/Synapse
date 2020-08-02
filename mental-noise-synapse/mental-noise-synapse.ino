@@ -76,20 +76,13 @@ const byte midiNotes[numberOfNotes] = {
 const byte defaultControlValue = 63;
 
 // CV Inputs pins.
-ResponsiveAnalogRead cc1(A7, true);
-ResponsiveAnalogRead cc2(A6, true);
-ResponsiveAnalogRead cc3(A5, true);
-ResponsiveAnalogRead cc4(A4, true);
-ResponsiveAnalogRead cc5(A3, true);
-ResponsiveAnalogRead cc6(A2, true);
-
-const ResponsiveAnalogRead ccInputs[numberOfControls] = {
-        cc1, // Clap PCM Speed
-        cc2, // Claves PCM Speed
-        cc3, // Agogo PCM Speed
-        cc4, // Crash PCM Speed
-        cc5, // Stutter Time
-        cc6, // Stutter Depth
+ResponsiveAnalogRead ccInputs[numberOfControls] = {
+    ResponsiveAnalogRead(A7, true), // Clap PCM Speed
+    ResponsiveAnalogRead(A6, true), // Clap PCM Speed
+    ResponsiveAnalogRead(A5, true), // Agogo PCM Speed
+    ResponsiveAnalogRead(A4, true), // Crash PCM Speed
+    ResponsiveAnalogRead(A3, true), // Stutter Time
+    ResponsiveAnalogRead(A2, true), // Stutter Depth
 };
 
 /*
