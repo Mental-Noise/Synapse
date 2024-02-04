@@ -1,4 +1,6 @@
-# Mental Noise - Synapse - CV2MIDI Eurorack module
+# Mental Noise - Synapse - CV to MIDI Eurorack module
+
+![Mental Noise - Synapse](synapse.jpg "Mental Noise - Synapse")
 
 This repository contains the code and schematics (EasyEDA format) for the Mental Noise - Synapse Eurorack module converting CV signals to MIDI commands any MIDI instrument can understand.
 
@@ -21,8 +23,6 @@ If this module gets a bit popular, I might consider writing an app to easily mod
 As I would love for anyone who wants to use this module to be able to, I'm selling some kits and fully assembled modules (in limited quantities) on [Tindie](https://www.tindie.com/stores/mentalnoise/).
 
 The goal is not to make lot of benefits on this module, I'm already making it available for free here but if you don't have the skills to do it yourself with all the sources available here then it's a good way for you to get one!
-
-If you don't want to buy the module but still want to support me, you can always send me a tip on [paypal](https://paypal.me/atudoll), this is highly appreciated! :)
 
 ## Specifications
 
